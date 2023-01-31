@@ -10,3 +10,9 @@ The Legend of Zelda: Breath of the Wild is an amazing game. All of us have playe
 Shrine tracking, account to store data, Write ups for each shrine with hint, See friends progress, notification when anyone using the app finds all shrines.
 
 ![Pitch Pic](https://github.com/thefedorable/Startup/blob/main/20230127_143554.jpg)
+
+/Seting up Server/
+
+Ip Address: http://18.223.10.130/
+
+Command: ssh -i ~/desktop/(keyfile) ubuntu@18.223.10.130
