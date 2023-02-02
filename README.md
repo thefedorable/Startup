@@ -16,3 +16,7 @@ Shrine tracking, account to store data, Write ups for each shrine with hint, See
 Ip Address: http://18.223.10.130/
 
 Command: ssh -i ~/desktop/(keyfile) ubuntu@18.223.10.130
+
+/Domain Name/
+
+http://thefedorable.click
