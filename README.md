@@ -20,3 +20,10 @@ Command: ssh -i ~/desktop/(keyfile) ubuntu@18.223.10.130
 /Domain Name/
 
 http://thefedorable.click
+
+
+/simon/
+
+I honestly learned so much. At this point I've finally got the grasp of HTMl and so everything felt pretty good. I can't say I'm good at it in the same way
+I'm good at c++ but if I have a cheat sheat next to me I think I'll be good. Also, I learned the importance of reading the push script. I chnaged the index 
+file to home because I thought that made more since up doing so messed up the push script so yeah, should proabably not do that from now on.
