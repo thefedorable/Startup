@@ -27,3 +27,7 @@ http://thefedorable.click
 I honestly learned so much. At this point I've finally got the grasp of HTMl and so everything felt pretty good. I can't say I'm good at it in the same way
 I'm good at c++ but if I have a cheat sheat next to me I think I'll be good. Also, I learned the importance of reading the push script. I chnaged the index 
 file to home because I thought that made more since up doing so messed up the push script so yeah, should proabably not do that from now on.
+
+/CSS Simon/
+
+The thing I really learned is that bootstrap and other things like it really streamline design. That isn't to say that css is useless. Color and images are something that css is really amazing at and so know how to use it is still important but most of my styling came from bootstrap since fidiling with css to syle things exactly as I want wasn't my favorite thing. Learning about everything bootstrap can do and using codepen to learn what it can do will be extremly important for my start up.
