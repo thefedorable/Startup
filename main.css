@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    min-width: 100vh;
+    flex: 1;
+    display: flex;
+    /* background styling */
+    background-size: 120% auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("media/Sheikah.png");
+}
+
+.list {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(6, 154, 152);
+}
+
+h {
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(6, 154, 152);
+
+}
