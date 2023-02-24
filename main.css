@@ -1,8 +1,10 @@
-main {
+header {
+    flex: 0 80px;
+  }
+
+.select {
     height: 100vh;
-    min-width: 100vh;
-    flex: 1;
-    display: flex;
+    min-width: 100vh; 
     background-size: 130% auto;
     background-position: center;
     background-attachment: fixed;
