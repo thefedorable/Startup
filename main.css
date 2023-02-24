@@ -11,16 +11,29 @@ body {
 }
 
 .list {
-    font-size: 20px;
+    font-size: 40px;
     font-family: monospace;
     font-weight: bold;
     color: rgb(6, 154, 152);
+    background-color: #eeeeee;
+    cursor: pointer;
+    padding: 60px;
+    width: 100%;
+    border: #333 solid thick;
+    border-radius: 5em;
+    text-align: center;
+    outline: none;
 }
 
+.active, .list:hover {
+    background-color: #ccc;
+  }
+
 h {
-    font-size: 30px;
+    font-size: 50px;
     font-family: monospace;
     font-weight: bold;
+    text-align: center;
     color: rgb(9, 98, 161);
 
 }
