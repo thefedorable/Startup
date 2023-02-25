@@ -2,15 +2,6 @@ header {
     flex: 0 80px;
   }
 
-.slate {
-    height: 100vh;
-    min-width: 100vh; 
-    background-size: 130% auto;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url("media/Sheikah.png");
-}
 .select {
     height: 100vh;
     min-width: 100vh; 
@@ -47,4 +38,74 @@ h {
     border-radius: 25px;
     
 }
+
+.title {
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.text {
+    font-size: 35px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(6, 154, 152);
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    background-color: #464040;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #6d6666;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
 
