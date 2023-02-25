@@ -31,3 +31,11 @@ file to home because I thought that made more since up doing so messed up the pu
 /CSS Simon/
 
 The thing I really learned is that bootstrap and other things like it really streamline design. That isn't to say that css is useless. Color and images are something that css is really amazing at and so know how to use it is still important but most of my styling came from bootstrap since fidiling with css to syle things exactly as I want wasn't my favorite thing. Learning about everything bootstrap can do and using codepen to learn what it can do will be extremly important for my start up.
+
+/JS/
+
+In order for the arrow function to work the way I would want it I need to do something like:
+const name = a => a * 100;
+That will create a function named name that will take a parameter and multiply 100 to it.
+
+
