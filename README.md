@@ -38,4 +38,8 @@ In order for the arrow function to work the way I would want it I need to do som
 const name = a => a * 100;
 That will create a function named name that will take a parameter and multiply 100 to it.
 
+/DOM/
+
+Ulitmatly all this is a way of taking the HTML elements of a website and turning that into an object that your javascript can manipulate. For example, Say we want something to change when we click a button. We use the function: document.getElementById("name").innerHTML = "Tanner Hartwell";. This will find the element that we give the id of name to. Then we use innerHTML to get the text that is being displayed and we can set that equal to whatever we want. It's simple function stuff but instead of creating variables we are basicly using our HTML as the variables.
+
 
