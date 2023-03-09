@@ -22,15 +22,13 @@ header {
     outline: none;
 }
 
-.active, .list:hover {
-    background-color: #ccc;
-  }
+
 
 h {
-    font-size: 50px;
-    font-family: monospace;
-    font-weight: bold;
-    color: rgb(9, 98, 161);
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(9, 98, 161);
 }
 
 .login {
@@ -47,10 +45,18 @@ h {
 }
 
 .text {
-    font-size: 35px;
+    font-size: 25px;
     font-family: monospace;
     font-weight: bold;
     color: rgb(6, 154, 152);
+}
+
+.box {
+  position:fixed;
+  left: 65px;
+  padding-right: 91px;
+  height: 60px;
+  width: 60px;
 }
 
 /* The container */
