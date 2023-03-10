@@ -52,7 +52,7 @@ h {
 }
 
 .box {
-  position:fixed;
+  position:absolute;
   left: 65px;
   padding-right: 91px;
   height: 60px;
