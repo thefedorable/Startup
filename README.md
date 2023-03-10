@@ -44,28 +44,38 @@ Ulitmatly all this is a way of taking the HTML elements of a website and turning
 
 /Notes from review/
 
-<div>
-Division
-Point to another DNS record
-Cname
+"<div>": Division
+  
+Point to another DNS record: Cname
+  
 You can load font in css with import
-Valid syntax for jason
-{“x”:3}
+  
+Valid syntax for jason: {“x”:3}
+  
 Can’t include js with <javascript>
-padding : 1em
-Puts space around the content
+  
+padding : 1em - Puts space around the content
+  
 Pals before marriage
-padding 
-Border
-Margin
+  
+padding, Border, Margin
+  
 Margin, border, padding, content
+  
 Know the array function
+  
 Reduce takes array and turns it into one value
-<li> : list item
-<ul> : ordered list
+  
+"<li> : list item"
+  
+"<ul> : ordered list"
+  
 Look at instructions for html tags
-<a> : to make hyperlink
+  
+"<a> : to make hyperlink"
+  
 Dom textcontent sets the child text for the an element
+  
 Check the console commands from the kahoot
 
 
