@@ -44,7 +44,7 @@ Ulitmatly all this is a way of taking the HTML elements of a website and turning
 
 /Notes from review/
 
-"<div>": Division
+div: Division
   
 Point to another DNS record: Cname
   
@@ -66,13 +66,13 @@ Know the array function
   
 Reduce takes array and turns it into one value
   
-"<li> : list item"
+li : list item"
   
-"<ul> : ordered list"
+ul : ordered list"
   
 Look at instructions for html tags
   
-"<a> : to make hyperlink"
+a : to make hyperlink"
   
 Dom textcontent sets the child text for the an element
   
