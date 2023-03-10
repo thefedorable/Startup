@@ -42,6 +42,33 @@ That will create a function named name that will take a parameter and multiply 1
 
 Ulitmatly all this is a way of taking the HTML elements of a website and turning that into an object that your javascript can manipulate. For example, Say we want something to change when we click a button. We use the function: document.getElementById("name").innerHTML = "Tanner Hartwell";. This will find the element that we give the id of name to. Then we use innerHTML to get the text that is being displayed and we can set that equal to whatever we want. It's simple function stuff but instead of creating variables we are basicly using our HTML as the variables.
 
+/Notes from review/
+
+<div>
+Division
+Point to another DNS record
+Cname
+You can load font in css with import
+Valid syntax for jason
+{“x”:3}
+Can’t include js with <javascript>
+padding : 1em
+Puts space around the content
+Pals before marriage
+padding 
+Border
+Margin
+Margin, border, padding, content
+Know the array function
+Reduce takes array and turns it into one value
+<li> : list item
+<ul> : ordered list
+Look at instructions for html tags
+<a> : to make hyperlink
+Dom textcontent sets the child text for the an element
+Check the console commands from the kahoot
+
+
 /Update with information from the lessons/
 
 # Notes for the Test
