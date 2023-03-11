@@ -44,30 +44,23 @@
                 alt="Shrine"
             />
 
+
             <form class="login">
+                <p class="text">
+                    If you want your friends to see your scores
+                    enter you name!
+                </p>
         
-                <div class="form-outline mb-4">
-                    <input
-                    type="username"
-                    id="username"
-                    class="varusername"
-                    placeholder="username"/>
-                </div>
-
-                <div class="form-outline mb-4">
-                    <input
-                    type="password"
-                    id="password"
-                    class="varPassword"
-                    placeholder="password"/>
-
-                </div>
+                <div>
+                    <input type="text" id="name" placeholder="Your name here" />
+                  </div>
 
                 <div>
                     <button 
                     type="button"
                     class="btn btn-block mb-4 text-dark"
                     style="background-color: #5a73e4"
+                    onclick="login()"
                     >Login</button>
                 </div>
             </form>
