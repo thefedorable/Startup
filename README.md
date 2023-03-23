@@ -611,14 +611,14 @@ const obj = {
 - if the JS associated with an HTML page references HTML elements during initialization, the script needs to be located at the bottom of the HTML
 
 
-//Startup-jS//
+### Startup-jS
 
-Local storage is a powerful tool that allows us to save files for each individual user. We can even save data to specific names to access in other js files. Basicly storage will be persistant but we will want to use other tools so that it can connect users instead of just being local.
+- Local storage is a powerful tool that allows us to save files for each individual user. We can even save data to specific names to access in other js files. Basicly storage will be persistant but we will want to use other tools so that it can connect users instead of just being local.
 
-Most of the stuff is literally like java so just us your logic from that for this.
+- Most of the stuff is literally like java so just us your logic from that for this.
 
 
-//Simon-service//
-Use this link when I need to set up service on my start up https://github.com/webprogramming260/.github/blob/main/profile/simon/simon-service/simon-service.md
+### Simon-service
+- Use this link when I need to set up service on my start up https://github.com/webprogramming260/.github/blob/main/profile/simon/simon-service/simon-service.md
 
-Nodes like a random quote may not exactly be necassary but I should look for possible a service that gives hints based off of the game my entire app is built around.
+- Nodes like a random quote may not exactly be necassary but I should look for possible a service that gives hints based off of the game my entire app is built around.
