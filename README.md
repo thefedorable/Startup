@@ -617,3 +617,8 @@ Local storage is a powerful tool that allows us to save files for each individua
 
 Most of the stuff is literally like java so just us your logic from that for this.
 
+
+//Simon-service//
+Use this link when I need to set up service on my start up https://github.com/webprogramming260/.github/blob/main/profile/simon/simon-service/simon-service.md
+
+Nodes like a random quote may not exactly be necassary but I should look for possible a service that gives hints based off of the game my entire app is built around.
