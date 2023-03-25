@@ -622,3 +622,13 @@ const obj = {
 - Use this link when I need to set up service on my start up https://github.com/webprogramming260/.github/blob/main/profile/simon/simon-service/simon-service.md
 
 - Nodes like a random quote may not exactly be necassary but I should look for possible a service that gives hints based off of the game my entire app is built around.
+
+
+### Simon-DB
+To make project work with mongo:
+
+1. find the directory called `mongoTest`
+1. get the code from `main.js`
+1. Run `npm init -y`
+1. Run `npm install mongodb`
+1. Run `node main.js`.
