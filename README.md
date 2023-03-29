@@ -671,3 +671,47 @@ When a user is logged in, the cookie is added. When a user makes a secure reques
 The service endpoints are contained in `index.js`. The endpoints include `authCreate`, `authLogin`, `authLogout`, and `userGet`. These all work with the database to store and get credentials and update the authorization cookie.
 
 A new Express router, `secureApiRouter` wraps the existing router to add a middleware function that verifies that the authorization cookie is valid before passing the request to endpoints that require authorization. That makes it easy to create secure endpoints by just registering them with `secureApiRouter`.
+  
+  
+  ### Simon-Websocket
+  
+  This basicly makes it so you can see what other users are doing at the same time. This is easy to adapt to your code. All we need to do is seen a socket everytime   someone gets 120 shrines and completes
+  
+  Here is some code that shows how to do this:
+  
+  // Functionality for peer communication using WebSocket
+
+  configureWebSocket() {
+    const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+    this.socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+    this.socket.onopen = (event) => {
+      this.displayMsg('system', 'game', 'connected');
+    };
+    this.socket.onclose = (event) => {
+      this.displayMsg('system', 'game', 'disconnected');
+    };
+    this.socket.onmessage = async (event) => {
+      const msg = JSON.parse(await event.data.text());
+      if (msg.type === GameEndEvent) {
+        this.displayMsg('player', msg.from, `scored ${msg.value.score}`);
+      } else if (msg.type === GameStartEvent) {
+        this.displayMsg('player', msg.from, `started a new game`);
+      }
+    };
+  }
+
+  displayMsg(cls, from, msg) {
+    const chatText = document.querySelector('#player-messages');
+    chatText.innerHTML =
+      `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+  }
+
+  broadcastEvent(from, type, value) {
+    const event = {
+      from: from,
+      type: type,
+      value: value,
+    };
+    this.socket.send(JSON.stringify(event));
+  }
+}
