@@ -46,6 +46,33 @@ h {
   color: rgb(9, 98, 161);
 }
 
+.players {
+  flex: 1;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.player-name {
+  color: rgb(118, 190, 210);
+}
+
+#player-messages {
+  padding-top: 0.25em;
+  opacity: 0.7;
+}
+
+.event {
+  color: rgb(255, 255, 255);
+}
+
+.player-event {
+  color: rgb(165, 220, 235);
+}
+
+.system-event {
+  color: rgb(221, 148, 40);
+}
+
 .login {
     padding: 30px;
     border-radius: 25px;

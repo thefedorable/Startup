@@ -1,5 +1,20 @@
 let boxes = document.getElementsByClassName('box').length;
+const GameEndEvent = 'gameEnd';
+const GameStartEvent = 'gameStart';
 
+
+function start() {
+  this.configureWebSocket();
+  
+  for(let i = 1; i <= boxes; i++){
+    if(localStorage.length > 0){
+      var checked = JSON.parse(localStorage.getItem("checkbox" + String(i)));
+      document.getElementById(String(i)).checked = checked;
+    }
+  }
+  this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
+
+}
 function save() {	
   for(let i = 1; i <= boxes; i++){
 	  var checkbox = document.getElementById(String(i));
@@ -37,6 +52,8 @@ async function saveScore(score) {
       body: JSON.stringify(newScore),
     });
 
+    this.broadcastEvent(userName, GameEndEvent, newScore);
+
     // Store what the service gave us as the high scores
     const scores = await response.json();
     localStorage.setItem('scores', JSON.stringify(scores));
@@ -71,6 +88,40 @@ function updateScoresLocal(newScore) {
   }
 
   localStorage.setItem('scores', JSON.stringify(scores));
+}
+
+function configureWebSocket() {
+  const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+  this.socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+  this.socket.onopen = (event) => {
+    this.displayMsg('system', 'You are', 'connected');
+  };
+  this.socket.onclose = (event) => {
+    this.displayMsg('system', 'You are', 'disconnected');
+  };
+  this.socket.onmessage = async (event) => {
+    const msg = JSON.parse(await event.data.text());
+    if (msg.type === GameEndEvent) {
+      this.displayMsg('player', msg.from, `has completed ${msg.value.score}`);
+    } else if (msg.type === GameStartEvent) {
+      this.displayMsg('player', msg.from, `started tracking`);
+    }
+  };
+}
+
+function displayMsg(cls, from, msg) {
+  const chatText = document.querySelector('#player-messages');
+  chatText.innerHTML =
+    `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+}
+
+function broadcastEvent(from, type, value) {
+  const event = {
+    from: from,
+    type: type,
+    value: value,
+  };
+  this.socket.send(JSON.stringify(event));
 }
 
 // function saveScore(score) {
@@ -116,10 +167,6 @@ function updateScoresLocal(newScore) {
 //   }
 
 //for loading
-for(let i = 1; i <= boxes; i++){
-  if(localStorage.length > 0){
-    var checked = JSON.parse(localStorage.getItem("checkbox" + String(i)));
-    document.getElementById(String(i)).checked = checked;
-  }
-}
+this.start();
+
 window.addEventListener('change', save);
