@@ -17,7 +17,7 @@
 
 
     <body class = "bg-dark text-light">
-        <header class="container">
+        <header class="container-fluid">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
               <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none">
                 <h1>Shrine Tracker</h1>
@@ -42,25 +42,64 @@
             />
 
 
-            <form class="login">
-                <p class="text">
-                    If you want your friends to see your progress
-                    enter you name!
-                </p>
-        
-                <div>
-                    <input type="text" id="name" placeholder="Your name here" />
-                  </div>
-
-                <div>
-                    <button 
-                    type="button"
-                    class="btn btn-block mb-4 text-dark"
-                    style="background-color: #5a73e4"
-                    onclick="login()"
-                    >Login</button>
+            <div class="login">
+                <div id="loginControls" style="display: none">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">@</span>
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="userName"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">🔒</span>
+                      <input
+                        class="form-control"
+                        type="password"
+                        id="userPassword"
+                        placeholder="password"
+                      />
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="loginUser()">
+                      Login
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="createUser()">
+                      Create
+                    </button>
                 </div>
-            </form>
+
+                <!-- Displayed when ready to play -->
+                <div id="playControls" style="display: none">
+                    <div id="playerName"></div>
+                    <button type="button" class="btn btn-primary" onclick="play()">
+                        Track
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="logout()">
+                        Logout
+                    </button>
+                </div>
+            </div>
+  
+            <!-- Error dialog -->
+            <div class="modal fade" id="msgModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-dark">
+                        <div class="modal-body">error message here</div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </main>
 
         <!-- Footer -->
