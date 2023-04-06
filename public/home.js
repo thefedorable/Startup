@@ -5,14 +5,14 @@ const GameStartEvent = 'gameStart';
 
 function start() {
   this.configureWebSocket();
-  
+
   for(let i = 1; i <= boxes; i++){
     if(localStorage.length > 0){
       var checked = JSON.parse(localStorage.getItem("checkbox" + String(i)));
       document.getElementById(String(i)).checked = checked;
     }
   }
-  this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
+  //this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
 
 }
 function save() {	
@@ -168,5 +168,4 @@ function broadcastEvent(from, type, value) {
 
 //for loading
 this.start();
-
 window.addEventListener('change', save);
