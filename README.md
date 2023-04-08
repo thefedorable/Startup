@@ -677,3 +677,7 @@ A new Express router, `secureApiRouter` wraps the existing router to add a middl
   
 This basicly makes it so you can see what other users are doing at the same time. This is easy to adapt to your code. All we need to do is seen a socket everytime   someone gets 120 shrines and completes
  
+
+### Simon-React
+
+Man this is a long process. Putting files every witch way and converting html so it is inserted via the Dom and can be changed on the fly. Really cool stuff actually. The way it becomes a big interconected spider web is awesome. Linking to the app files and only coding the header once. But man, I'm glad this isn't required anymore because just reading the instructiosn took forever.
